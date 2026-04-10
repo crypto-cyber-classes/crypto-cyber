@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#en-construccion" class="md-skip">
+        <a href="#clase-6-integridad-y-autenticidad" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -590,6 +590,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clase 6 — Integridad y Autenticidad
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -606,6 +624,487 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-no-alcanza-con-cifrar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué no alcanza con cifrar?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Por qué no alcanza con cifrar?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-ataque-de-bit-flipping-repaso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El ataque de bit-flipping (repaso)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funciones-hash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funciones Hash
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funciones Hash">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propiedades-requeridas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propiedades requeridas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-hash-no-es-cifrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué hash no es cifrado?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algoritmos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Algoritmos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mac-message-authentication-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MAC — Message Authentication Code
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MAC — Message Authentication Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-garantiza-un-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué garantiza un MAC?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimizacion-de-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimización de MAC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimización de MAC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#por-que-no-usar-hk-x-secret-prefix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué no usar H(K ∥ X) (secret prefix)?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-no-usar-hx-k-secret-suffix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué no usar H(X ∥ K) (secret suffix)?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hmac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HMAC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitacion-del-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limitación del MAC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmas-digitales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Firmas Digitales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Firmas Digitales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propiedades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propiedades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rsa-como-firma-digital" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RSA como firma digital
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dsa-y-ecdsa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSA y ECDSA
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hash-mac-firma-cuando-usar-cada-uno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hash + MAC + Firma: cuándo usar cada uno?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hash + MAC + Firma: cuándo usar cada uno?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-patron-mas-comun-en-la-practica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El patrón más común en la práctica
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-establishment-establecimiento-de-claves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Establishment — Establecimiento de claves
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Establishment — Establecimiento de claves">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-de-distribucion-de-claves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema de distribución de claves
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="El problema de distribución de claves">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-escala-mal-en-redes-grandes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema escala mal en redes grandes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claves-de-sesion-kses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claves de sesión (KSES)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-distribution-center-kdc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Distribution Center (KDC)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Distribution Center (KDC)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protocolo-de-key-transport-con-kdc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Protocolo de key transport con KDC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitaciones-del-kdc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limitaciones del KDC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-solucion-criptografia-asimetrica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La solución: criptografía asimétrica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La solución: criptografía asimétrica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-transport-con-criptografia-asimetrica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key transport con criptografía asimétrica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-agreement-con-dh-efimero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key agreement con DH efímero
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pki-infraestructura-de-clave-publica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PKI — Infraestructura de Clave Pública
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PKI — Infraestructura de Clave Pública">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#certificados-x509" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Certificados X.509
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cadena-de-confianza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cadena de confianza
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TLS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conceptos-clave-de-esta-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptos clave de esta clase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proxima-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Próxima clase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -957,6 +1456,476 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-no-alcanza-con-cifrar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué no alcanza con cifrar?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Por qué no alcanza con cifrar?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-ataque-de-bit-flipping-repaso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El ataque de bit-flipping (repaso)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funciones-hash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funciones Hash
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funciones Hash">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propiedades-requeridas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propiedades requeridas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-hash-no-es-cifrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué hash no es cifrado?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algoritmos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Algoritmos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mac-message-authentication-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MAC — Message Authentication Code
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MAC — Message Authentication Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-garantiza-un-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué garantiza un MAC?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimizacion-de-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimización de MAC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimización de MAC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#por-que-no-usar-hk-x-secret-prefix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué no usar H(K ∥ X) (secret prefix)?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-no-usar-hx-k-secret-suffix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué no usar H(X ∥ K) (secret suffix)?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hmac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HMAC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitacion-del-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limitación del MAC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmas-digitales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Firmas Digitales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Firmas Digitales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propiedades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propiedades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rsa-como-firma-digital" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RSA como firma digital
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dsa-y-ecdsa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSA y ECDSA
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hash-mac-firma-cuando-usar-cada-uno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hash + MAC + Firma: cuándo usar cada uno?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hash + MAC + Firma: cuándo usar cada uno?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-patron-mas-comun-en-la-practica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El patrón más común en la práctica
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-establishment-establecimiento-de-claves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Establishment — Establecimiento de claves
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Establishment — Establecimiento de claves">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-de-distribucion-de-claves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema de distribución de claves
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="El problema de distribución de claves">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-escala-mal-en-redes-grandes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema escala mal en redes grandes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claves-de-sesion-kses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claves de sesión (KSES)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-distribution-center-kdc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Distribution Center (KDC)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Distribution Center (KDC)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protocolo-de-key-transport-con-kdc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Protocolo de key transport con KDC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitaciones-del-kdc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limitaciones del KDC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-solucion-criptografia-asimetrica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La solución: criptografía asimétrica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La solución: criptografía asimétrica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-transport-con-criptografia-asimetrica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key transport con criptografía asimétrica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-agreement-con-dh-efimero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key agreement con DH efímero
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pki-infraestructura-de-clave-publica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PKI — Infraestructura de Clave Pública
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PKI — Infraestructura de Clave Pública">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#certificados-x509" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Certificados X.509
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cadena-de-confianza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cadena de confianza
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TLS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conceptos-clave-de-esta-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptos clave de esta clase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proxima-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Próxima clase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -975,10 +1944,348 @@
   
 
 
-<h1 id="en-construccion">En construcción</h1>
+<h1 id="clase-6-integridad-y-autenticidad">Clase 6 — Integridad y Autenticidad</h1>
 <blockquote>
-<p>Apuntes de esta clase próximamente.</p>
+<p><strong>Módulo:</strong> Criptografía  </p>
 </blockquote>
+<hr />
+<h2 id="por-que-no-alcanza-con-cifrar">Por qué no alcanza con cifrar?</h2>
+<p>Hasta ahora nos enfocamos en <strong>confidencialidad</strong>: que nadie pueda leer el mensaje. Pero hay dos problemas que el cifrado solo no resuelve:</p>
+<p><strong>Integridad:</strong> el mensaje llegó sin modificaciones? Un atacante que intercepta un ciphertext puede modificarlo sin descifrarlo — y el receptor no tiene forma de detectarlo.</p>
+<p><strong>Autenticidad:</strong> el mensaje lo envió quien dice haberlo enviado? El cifrado garantiza confidencialidad, pero no autenticidad.</p>
+<h3 id="el-ataque-de-bit-flipping-repaso">El ataque de bit-flipping (repaso)</h3>
+<p>En la Clase 2 vimos que en CTR mode, si un atacante conoce la posición de un campo en el plaintext (por ejemplo, el monto de una transferencia), puede modificar ese byte en el ciphertext y el receptor descifrará un valor distinto sin saberlo. El mensaje llega cifrado, pero adulterado.</p>
+<p><strong>Conclusión:</strong> confidencialidad e integridad son problemas independientes. Necesitan soluciones distintas.</p>
+<hr />
+<h2 id="funciones-hash">Funciones Hash</h2>
+<p>Una <strong>función hash criptográfica</strong> toma un input de longitud arbitraria y produce un output de longitud fija llamado <strong>digest</strong>, <strong>hash</strong> o <strong>huella digital</strong>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>H(&quot;Hola mundo&quot;)           →  a3b4c2...  (256 bits)
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>H(&quot;Hola mundo.&quot;)          →  f7e2a1...  (256 bits)  ← completamente distinto
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>H(archivo de 10 GB)       →  9d1c3f...  (256 bits)
+</code></pre></div>
+<h3 id="propiedades-requeridas">Propiedades requeridas</h3>
+<p><strong>Resistencia a preimagen:</strong> dado un hash h, es computacionalmente inviable encontrar un mensaje x tal que H(x) = h. No se puede "revertir" el hash.</p>
+<p><strong>Resistencia a segunda preimagen:</strong> dado un mensaje x<sub>1</sub>, es computacionalmente inviable encontrar x<sub>2</sub> ≠ x<sub>1</sub> tal que H(x<sub>1</sub>) = H(x<sub>2</sub>). No se puede encontrar otro mensaje con el mismo hash.</p>
+<p><strong>Resistencia a colisiones:</strong> es computacionalmente inviable encontrar cualquier par (x<sub>1</sub>,x<sub>2</sub>) con x<sub>1</sub> ≠ x<sub>2</sub> tal que H(x<sub>1</sub>) = H(x<sub>2</sub>). Nadie puede fabricar dos mensajes distintos con el mismo hash.</p>
+<p><strong>Efecto avalancha:</strong> un cambio mínimo en el input produce un hash completamente distinto. No hay correlación observable entre input y output.</p>
+<h3 id="por-que-hash-no-es-cifrado">Por qué hash no es cifrado?</h3>
+<p>Un error común es tratar el hash como cifrado. No lo es:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Hash</th>
+<th>Cifrado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reversible</td>
+<td>No — función de una vía</td>
+<td>Sí — con la clave</td>
+</tr>
+<tr>
+<td>Clave</td>
+<td>No requiere</td>
+<td>Requiere</td>
+</tr>
+<tr>
+<td>Propósito</td>
+<td>Verificar integridad</td>
+<td>Confidencialidad</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Tamaño fijo</td>
+<td>Tamaño del orden del input</td>
+</tr>
+</tbody>
+</table>
+<p>El hash no oculta el contenido del mensaje. Si alguien tiene el mensaje original, puede verificar el hash. Pero no puede reconstruir el mensaje a partir del hash.</p>
+<h3 id="algoritmos">Algoritmos</h3>
+<p><strong>MD5 (1992):</strong> output de 128 bits. Colisiones encontradas en 2004. <strong>No usar para seguridad.</strong></p>
+<p><strong>SHA-1 (1995):</strong> output de 160 bits. Colisiones demostradas por Google en 2017 (SHAttered). <strong>No usar para seguridad.</strong></p>
+<p><strong>SHA-256 / SHA-3 (familia SHA-2 y SHA-3):</strong> output de 256 bits. Estándar actual. Sin colisiones conocidas. SHA-256 es el más usado en la práctica (TLS, Bitcoin, Git).</p>
+<p><strong>BLAKE3:</strong> alternativa moderna, más rápida que SHA-256, seguridad comparable.</p>
+<hr />
+<h2 id="mac-message-authentication-code">MAC — Message Authentication Code</h2>
+<p>Un <strong>MAC</strong> es un tag de autenticación calculado sobre un mensaje usando una <strong>clave secreta compartida</strong>. Garantiza simultáneamente integridad y autenticidad.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Tag = MAC(K, X)
+</code></pre></div>
+<p>El receptor, que conoce K, recalcula el tag y lo compara con el recibido. Si coinciden, el mensaje es auténtico e íntegro.</p>
+<h3 id="que-garantiza-un-mac">Qué garantiza un MAC?</h3>
+<ul>
+<li><strong>Integridad:</strong> cualquier modificación del mensaje cambia el tag.</li>
+<li><strong>Autenticidad:</strong> sólo quien conoce K puede generar un tag válido.</li>
+<li><strong>No garantiza confidencialidad:</strong> el mensaje puede estar en claro.</li>
+</ul>
+<h3 id="optimizacion-de-mac">Optimización de MAC</h3>
+<p>La idea es usar una función Hash para generar el tag.</p>
+<h4 id="por-que-no-usar-hk-x-secret-prefix">Por qué no usar H(K ∥ X) (secret prefix)?</h4>
+<p>Una construcción intuitiva sería simplemente hashear la clave concatenada con el mensaje. Pero esta construcción es vulnerable al <strong>ataque de length extension</strong>: dado H(K ∥ X), un atacante puede calcular H(K ∥ X ∥ X') sin conocer K, para cualquier extensión X'. Esto permite falsificar MACs. </p>
+<p>Las funciones de hash dividen el texto en varios bloques y van comprimiendo uno a uno generando un estado intermedio que se va modificando con cada compresión. El <em>digest</em> resultante es el estado interno final. Esta estructura se denomina <em>Merkle-Damgård</em>.</p>
+<p>Por eso, al tener el estado final del hash, se pueden generar nuevos bloques y concatenarlos al final, generando una nueva MAC.</p>
+<h3 id="por-que-no-usar-hx-k-secret-suffix">Por qué no usar H(X ∥ K) (secret suffix)?</h3>
+<p>Otra construcción sería hashear el mensaje con la clave concatenada al final. Pero esta construcción es vulnerable a los ataques que apuntan a la segunda preimagen: un atacante intercepta el mensaje con su MAC (X, H(X ∥ K)). Calcula luego X' cuyo hash es el mismo que X, y reemplaza X por X' (X', H(X ∥ K)).</p>
+<h3 id="hmac">HMAC</h3>
+<p><strong>HMAC (Hash-based MAC)</strong> es la construcción estándar que evita el ataque de length extension y a la segunda preimagen:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>HMAC(K, X) = H( (K ⊕ opad) ∥ H( (K ⊕ ipad) ∥ X ) )
+</code></pre></div>
+<p>Donde opad e ipad son constantes fijas de padding. La doble aplicación del hash elimina las vulnerabilidades.</p>
+<div align="center">
+  <img src="/crypto-cyber/modulo-1-criptografia/images/HMAC" alt="HMAC" width="400">
+</div>
+
+<p><strong>HMAC-SHA256</strong> es el estándar actual en la práctica: TLS, JWT, APIs REST, SSH.</p>
+<h3 id="limitacion-del-mac">Limitación del MAC</h3>
+<p>MAC requiere que emisor y receptor <strong>compartan una clave secreta previamente</strong>. Esto lo hace ideal para comunicación entre dos partes que ya se autenticaron (como en TLS después del handshake), pero no resuelve el problema de autenticación frente a terceros — para eso se necesitan firmas digitales.</p>
+<hr />
+<h2 id="firmas-digitales">Firmas Digitales</h2>
+<p>Una <strong>firma digital</strong> usa criptografía asimétrica para garantizar autenticidad e integridad de forma verificable por cualquier tercero, sin necesidad de clave compartida.</p>
+<div style="background:#f5f5f5b3; padding:10px; border-radius:5px; font-family:monospace">
+Firma:       S = Sign(Kpriv, X)      (Kpriv = clave privada del firmante)
+Verificación: Verify(Kpub, X, S)    (Kpub = clave pública del firmante)
+</div>
+
+<h3 id="propiedades">Propiedades</h3>
+<p><strong>Autenticidad:</strong> sólo quien posee la clave privada puede generar una firma válida.</p>
+<p><strong>Integridad:</strong> la firma cubre el contenido del mensaje — cualquier modificación invalida la firma.</p>
+<p><strong>No repudio:</strong> el firmante no puede negar haber firmado — sólo él tiene la clave privada. A diferencia del MAC, un tercero puede verificar la firma sin haber participado en la comunicación.</p>
+<h3 id="rsa-como-firma-digital">RSA como firma digital</h3>
+<p>RSA permite invertir los roles de las claves:</p>
+<div style="background:#f5f5f5b3; padding:10px; border-radius:5px; font-family:monospace">
+Firma:        S = X<sup>d</sup> mod n      (Bob firma con su clave privada)
+Verificación: X = S<sup>e</sup> mod n      (Cualquiera verifica con la clave pública de Bob)
+</div>
+
+<p>En la práctica no se firma el mensaje completo (sería lento para mensajes largos). Se firma el <strong>hash del mensaje</strong>:</p>
+<div style="background:#f5f5f5b3; padding:10px; border-radius:5px; font-family:monospace">
+S = (H(X))<sup>d</sup> mod n
+</div>
+
+<p>El verificador calcula H(X) y lo compara con S<sup>e</sup> mod n.</p>
+<h3 id="dsa-y-ecdsa">DSA y ECDSA</h3>
+<p><strong>DSA (Digital Signature Algorithm):</strong> estándar del NIST basado en DLP, no en factorización. Sólo sirve para firmas (no para cifrado).</p>
+<p><strong>ECDSA:</strong> DSA sobre curvas elípticas. Misma seguridad que DSA con claves mucho más cortas. Es el estándar actual en TLS, Bitcoin, y la mayoría de certificados modernos.</p>
+<hr />
+<h2 id="hash-mac-firma-cuando-usar-cada-uno">Hash + MAC + Firma: cuándo usar cada uno?</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Hash</th>
+<th>MAC</th>
+<th>Firma digital</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clave requerida</td>
+<td>No</td>
+<td>Sí (simétrica, compartida)</td>
+<td>Sí (asimétrica, par propio)</td>
+</tr>
+<tr>
+<td>Garantiza integridad</td>
+<td>Sí (si el hash viaja seguro)</td>
+<td>Sí</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Garantiza autenticidad</td>
+<td>No</td>
+<td>Sí (entre las dos partes)</td>
+<td>Sí (verificable por terceros)</td>
+</tr>
+<tr>
+<td>No repudio</td>
+<td>No</td>
+<td>No</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Velocidad</td>
+<td>Muy rápido</td>
+<td>Rápido</td>
+<td>Lento</td>
+</tr>
+<tr>
+<td>Uso típico</td>
+<td>Checksums, Git, Bitcoin</td>
+<td>TLS record layer, JWT, APIs</td>
+<td>Certificados, contratos, código firmado</td>
+</tr>
+</tbody>
+</table>
+<h3 id="el-patron-mas-comun-en-la-practica">El patrón más común en la práctica</h3>
+<p><strong>Cifrado autenticado = confidencialidad + integridad + autenticidad</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>AES-GCM = AES-CTR (confidencialidad) + GHASH MAC (integridad/autenticidad)
+</code></pre></div>
+<p>Que es exactamente lo que vimos en Clase 3 — GCM combina cifrado e integridad en una sola operación. Ahora entendemos por qué: el tag de GCM es un MAC sobre el ciphertext.</p>
+<hr />
+<h2 id="key-establishment-establecimiento-de-claves">Key Establishment — Establecimiento de claves</h2>
+<p>Las firmas digitales resuelven autenticidad. Los MACs resuelven integridad. Pero queda una pregunta sin responder: cómo dos partes establecen una clave de sesión de forma segura <strong>y</strong> autenticada?</p>
+<p>Este es el problema de <strong>key establishment</strong> (establecimiento de claves), y es donde todo lo visto converge.</p>
+<hr />
+<h3 id="el-problema-de-distribucion-de-claves">El problema de distribución de claves</h3>
+<p>Si Alice y Bob quieren usar AES-GCM para comunicarse, necesitan una clave simétrica compartida. Cómo la obtienen sin haberlo acordado de antemano?</p>
+<p>La solución más directa — enviarse la clave por el mismo canal que usarán para comunicarse — es circular: si el canal no es seguro, la clave queda expuesta. Si ya fuera seguro, no necesitarían la clave.</p>
+<h4 id="el-problema-escala-mal-en-redes-grandes">El problema escala mal en redes grandes</h4>
+<p>Imaginate una red de n usuarios que quieren poder comunicarse entre sí en forma privada. Si cada par de usuarios necesita una clave simétrica dedicada, el número total de claves es:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>n × (n-1) / 2
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Para n = 1.000 usuarios  →  ~500.000 claves
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>Para n = 1.000.000       →  ~500.000.000.000 claves
+</code></pre></div>
+<p>Esto genera tres problemas concretos:</p>
+<p><strong>Distribución:</strong> cómo hacer llegar de forma segura tantas claves a cada usuario?</p>
+<p><strong>Almacenamiento:</strong> cada usuario necesita guardar n-1 claves. Para redes grandes, esto es inviable y es un riesgo de seguridad — más claves almacenadas significa más superficie de ataque.</p>
+<p><strong>Revocación:</strong> si una clave se compromete o un usuario abandona la red, hay que revocar y redistribuir potencialmente miles de claves. No existe un mecanismo eficiente para hacerlo en un sistema puramente simétrico.</p>
+<hr />
+<h4 id="claves-de-sesion-kses">Claves de sesión (KSES)</h4>
+<p>La primera optimización es distinguir dos tipos de claves:</p>
+<p><strong>Clave de largo plazo (KEK — Key Encryption Key):</strong> una clave simétrica que dos entidades comparten de forma permanente. No se usa para cifrar datos — sólo se usa para proteger el transporte de las claves de sesión.</p>
+<p><strong>Clave de sesión (KSES — Session Key):</strong> una clave simétrica efímera, regenerada para cada comunicación. Cifra los datos reales y se descarta al terminar la sesión.</p>
+<div style="background:#f5f5f5b3; padding:10px; border-radius:5px; font-family:monospace">
+Flujo:  
+1. Alice y Bob tienen una KEK compartida de antemano
+2. Alice genera una KSES aleatoria
+3. Alice envía  E(KEK, KSES)  a Bob
+4. Bob descifra con KEK → obtiene KSES
+5. Alice y Bob cifran la conversación con KSES
+6. Al terminar, KSES se descarta
+</div>
+
+<p><strong>Ventaja:</strong> la KEK se usa raramente, lo que reduce su exposición. La KSES se renueva cada vez, limitando el daño si se compromete.</p>
+<p><strong>Problema que queda:</strong> sigue requiriendo que cada par de usuarios tenga una KEK compartida de antemano — el problema de la escala no desaparece.</p>
+<hr />
+<h4 id="key-distribution-center-kdc">Key Distribution Center (KDC)</h4>
+<p>La solución simétrica al problema de escala es centralizar la gestión de claves en un <strong>Key Distribution Center (KDC)</strong>: un servidor de confianza centralizado que comparte una KEK única con cada usuario de la red.</p>
+<div style="background:#f5f5f5b3; padding:10px; border-radius:5px; font-family:monospace">
+Usuarios: Alice, Bob, Carol, ...
+KDC comparte:
+  - KEK_A  con Alice  (sólo Alice y KDC la conocen)
+  - KEK_B  con Bob    (sólo Bob y KDC la conocen)
+  - KEK_C  con Carol  (sólo Carol y KDC la conocen)
+  ...
+</div>
+
+<p><strong>Número de claves necesarias:</strong> solo <strong>n</strong> claves (una por usuario), en lugar de n(n-1)/2.</p>
+<h5 id="protocolo-de-key-transport-con-kdc">Protocolo de key transport con KDC</h5>
+<div style="background:#f5f5f5b3; padding:10px; border-radius:5px; font-family:monospace">
+1. Alice quiere comunicarse con Bob
+2. Alice solicita al KDC una clave de sesión para hablar con Bob
+3. KDC genera KSES aleatoria y envía:
+     E(KEK_A, KSES)  →  a Alice
+     E(KEK_B, KSES)  →  a Bob      
+4. Alice descifra con KEK_A → obtiene KSES
+5. Bob descifra con KEK_B → obtiene KSES
+6. Alice y Bob cifran su conversación con KSES
+</div>
+
+<p><strong>Ventaja principal:</strong> n claves en lugar de n(n-1)/2. El almacenamiento y la distribución se vuelven manejables.</p>
+<h5 id="limitaciones-del-kdc">Limitaciones del KDC</h5>
+<p><strong>Single point of failure:</strong> si el KDC cae, nadie puede establecer nuevas sesiones. Requiere alta disponibilidad y redundancia.</p>
+<p><strong>Single point of trust:</strong> el KDC conoce todas las KSES. Comprometer el KDC compromete todas las comunicaciones. Es el blanco más valioso de la red.</p>
+<p><strong>Escalabilidad entre dominios:</strong> funciona bien dentro de una organización, pero ¿cómo dos organizaciones con distintos KDC establecen comunicación segura? El modelo no escala a comunicaciones por Internet.</p>
+<p><strong>Sin PFS:</strong> si el KDC se compromete, todas las KSES pasadas que distribuyó pueden ser reconstruidas.</p>
+<hr />
+<h4 id="la-solucion-criptografia-asimetrica">La solución: criptografía asimétrica</h4>
+<p>Los problemas del KDC no son fallos de implementación — son limitaciones estructurales de la criptografía simétrica para key establishment. </p>
+<p><strong>El cambio fundamental:</strong> con criptografía de clave pública, cada usuario tiene su propio par de claves. No hace falta que el KDC distribuya nada — la clave pública de cada usuario puede estar disponible libremente.</p>
+<table>
+<thead>
+<tr>
+<th>Problema simétrico (KDC)</th>
+<th>Solución asimétrica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n(n-1)/2 claves compartidas</td>
+<td>n pares de claves (uno por usuario)</td>
+</tr>
+<tr>
+<td>KDC conoce todas las KSES</td>
+<td>Nadie excepto el destinatario que descifra</td>
+</tr>
+<tr>
+<td>Sin PFS</td>
+<td>DH efímero garantiza PFS</td>
+</tr>
+<tr>
+<td>No escala entre dominios</td>
+<td>Las claves públicas se publican libremente</td>
+</tr>
+<tr>
+<td>Revocación difícil</td>
+<td>Certificados con fecha de expiración y listas de revocación</td>
+</tr>
+</tbody>
+</table>
+<h5 id="key-transport-con-criptografia-asimetrica">Key transport con criptografía asimétrica</h5>
+<div style="background:#f5f5f5b3; padding:10px; border-radius:5px; font-family:monospace">
+Alice quiere enviar una KSES a Bob:
+1. Alice genera KSES aleatoria
+2. Alice cifra:  C = E(Kpub_Bob, KSES)   usando clave pública de Bob
+3. Bob descifra: KSES = D(Kpriv_Bob, C)   usando su clave privada
+4. Sólo Bob puede descifrar — ni siquiera Alice puede recuperar KSES desde C
+</div>
+
+<h5 id="key-agreement-con-dh-efimero">Key agreement con DH efímero</h5>
+<div style="background:#f5f5f5b3; padding:10px; border-radius:5px; font-family:monospace">
+Alice y Bob generan la KSES juntos sin que nadie la envíe:
+1. Alice genera a efímero  →  A = g<sup>a</sup> mod p
+2. Bob genera b efímero    →  B = g<sup>b</sup> mod p
+3. Intercambian A y B (autenticados con firmas)
+4. Ambos derivan  KSES = g<sup>ab</sup> mod p
+5. Nadie más — ni un KDC — conoció KSES en ningún momento
+</div>
+
+<p>La asimetría resuelve el problema de distribución sin necesitar un tercero de confianza para cada sesión. La PKI (que veremos a continuación) resuelve el último problema pendiente: verificar que las claves públicas pertenecen a quien dicen.</p>
+<hr />
+<h2 id="pki-infraestructura-de-clave-publica">PKI — Infraestructura de Clave Pública</h2>
+<p>Las firmas digitales resuelven autenticidad, pero generan un nuevo problema: cómo saber que una clave pública pertenece realmente a quien dice?</p>
+<h3 id="certificados-x509">Certificados X.509</h3>
+<p>Un <strong>certificado digital</strong> es un documento que asocia una clave pública con una identidad, y es firmado por una <strong>Autoridad Certificadora (CA)</strong> de confianza.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Certificado = { identidad, clave_pública, validez, ... }
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>              firmado por CA
+</code></pre></div>
+<p>El cliente confía en la CA (su clave pública viene preinstalada en el sistema operativo o navegador). Si la CA firma el certificado del servidor, el cliente puede verificar la identidad del servidor.</p>
+<h3 id="cadena-de-confianza">Cadena de confianza</h3>
+<p>En la práctica hay una jerarquía:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Root CA  →  Intermediate CA  →  Certificado del servidor
+</code></pre></div>
+<p>Los navegadores incluyen ~150 Root CAs de confianza. Cada vez que abrís un sitio HTTPS, tu navegador verifica esta cadena.</p>
+<h3 id="tls">TLS</h3>
+<p>La imagen completa de TLS 1.3:</p>
+<ol>
+<li>El servidor envía su <strong>certificado</strong> (firmado por una CA).</li>
+<li>El cliente verifica la cadena de confianza — confirma identidad del servidor.</li>
+<li>Ambos hacen <strong>ECDHE</strong> para establecer el secreto de sesión.</li>
+<li>Todos los datos se cifran con <strong>AES-GCM</strong> — confidencialidad + integridad.</li>
+</ol>
+<hr />
+<h2 id="conceptos-clave-de-esta-clase">Conceptos clave de esta clase</h2>
+<ul>
+<li><strong>Cifrado ≠ integridad:</strong> el cifrado oculta el contenido pero no detecta modificaciones. Son problemas independientes.</li>
+<li><strong>Hash:</strong> función <em>one-way</em>, output de longitud fija. Propiedades: resistencia a preimagen, segunda preimagen, colisiones, efecto avalancha. No es cifrado.</li>
+<li><strong>MAC:</strong> tag de autenticación con clave simétrica compartida. Garantiza integridad + autenticidad. HMAC-SHA256 es el estándar.</li>
+<li><strong>Firma digital:</strong> criptografía asimétrica para autenticidad + integridad verificable por terceros + no repudio. Se firma H(X), no X directamente.</li>
+<li><strong>No repudio:</strong> sólo las firmas digitales lo garantizan. Los MACs no — cualquiera de las dos partes con la clave podría haber generado el tag.</li>
+<li><strong>Key establishment:</strong> cómo dos partes acuerdan una clave de sesión de forma segura y autenticada. DH efímero + firmas = PFS sin vulnerabilidad MITM.</li>
+<li><strong>PKI y certificados X.509:</strong> asocian claves públicas con identidades mediante una CA de confianza. Base de HTTPS.</li>
+</ul>
+<hr />
+<h2 id="proxima-clase">Próxima clase</h2>
+<p><strong>Evolución de la criptografía:</strong> curvas elípticas (ECC), criptografía cuántica y post-cuántica — y por qué todos los algoritmos se ven afectados.</p>
+<hr />
+<h2 id="fuentes">Fuentes</h2>
+<ul>
+<li>Paar, C. &amp; Pelzl, J. — <em>Understanding Cryptography</em></li>
+<li>Stallings, W. — <em>Cryptography and Network Security</em></li>
+</ul>
+<hr />
 
 
 
