@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#en-construccion" class="md-skip">
+        <a href="#clase-9-autenticacion-y-gestion-de-identidades-iam" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -735,6 +735,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clase 9 — Identidades y Autenticación
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -751,6 +769,413 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fundamentos-que-es-una-identidad-digital" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fundamentos: qué es una identidad digital?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ciclo-de-vida-de-las-identidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ciclo de vida de las identidades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autenticacion-vs-autorizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autenticación vs. Autorización
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credenciales-y-autenticacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credenciales y Autenticación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Credenciales y Autenticación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es-una-credencial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué es una credencial?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-nombre-de-usuario-es-parte-de-la-identidad-o-de-la-credencial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El nombre de usuario es parte de la identidad o de la credencial?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autenticacion-de-usuario-vs-autenticacion-de-mensajes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autenticación de usuario vs. autenticación de mensajes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#factores-de-autenticacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Factores de autenticación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contrasenas-el-eslabon-mas-debil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contraseñas — el eslabón más débil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ataques-a-la-autenticacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ataques a la autenticación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mfa-autenticacion-multifactor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MFA — Autenticación Multifactor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-de-registro-y-ciclo-de-vida-de-credenciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modelo de registro y ciclo de vida de credenciales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modelo de registro y ciclo de vida de credenciales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ciclo-de-vida-de-la-credencial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ciclo de vida de la credencial
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autorizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autorización
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Autorización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelos-de-control-de-acceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modelos de control de acceso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#segregacion-de-funciones-sod-separation-of-duties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Segregación de funciones (SoD — Separation of Duties)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funciones-del-nist-csf-en-identidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funciones del NIST CSF en identidades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protocolos-oauth-20-openid-connect-y-jwt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Protocolos: OAuth 2.0, OpenID Connect y JWT
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Protocolos: OAuth 2.0, OpenID Connect y JWT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-que-resuelven" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema que resuelven
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oauth-20-delegacion-de-acceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OAuth 2.0 — Delegación de acceso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openid-connect-oidc-autenticacion-sobre-oauth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenID Connect (OIDC) — Autenticación sobre OAuth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jwt-json-web-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JWT — JSON Web Token
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guardado-de-credenciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guardado de credenciales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guardado de credenciales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hashing-vs-cifrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hashing vs cifrado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Salting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peppering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Peppering
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identidad-federada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identidad federada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identidad federada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-es-la-federacion-de-identidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es la federación de identidades?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conceptos-clave-de-esta-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptos clave de esta clase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-la-proxima-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para la próxima clase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -957,6 +1382,402 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fundamentos-que-es-una-identidad-digital" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fundamentos: qué es una identidad digital?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ciclo-de-vida-de-las-identidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ciclo de vida de las identidades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autenticacion-vs-autorizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autenticación vs. Autorización
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credenciales-y-autenticacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credenciales y Autenticación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Credenciales y Autenticación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es-una-credencial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué es una credencial?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-nombre-de-usuario-es-parte-de-la-identidad-o-de-la-credencial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El nombre de usuario es parte de la identidad o de la credencial?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autenticacion-de-usuario-vs-autenticacion-de-mensajes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autenticación de usuario vs. autenticación de mensajes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#factores-de-autenticacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Factores de autenticación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contrasenas-el-eslabon-mas-debil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contraseñas — el eslabón más débil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ataques-a-la-autenticacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ataques a la autenticación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mfa-autenticacion-multifactor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MFA — Autenticación Multifactor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-de-registro-y-ciclo-de-vida-de-credenciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modelo de registro y ciclo de vida de credenciales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modelo de registro y ciclo de vida de credenciales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ciclo-de-vida-de-la-credencial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ciclo de vida de la credencial
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autorizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autorización
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Autorización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelos-de-control-de-acceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modelos de control de acceso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#segregacion-de-funciones-sod-separation-of-duties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Segregación de funciones (SoD — Separation of Duties)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funciones-del-nist-csf-en-identidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funciones del NIST CSF en identidades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protocolos-oauth-20-openid-connect-y-jwt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Protocolos: OAuth 2.0, OpenID Connect y JWT
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Protocolos: OAuth 2.0, OpenID Connect y JWT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-que-resuelven" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema que resuelven
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oauth-20-delegacion-de-acceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OAuth 2.0 — Delegación de acceso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openid-connect-oidc-autenticacion-sobre-oauth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenID Connect (OIDC) — Autenticación sobre OAuth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jwt-json-web-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JWT — JSON Web Token
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guardado-de-credenciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guardado de credenciales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guardado de credenciales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hashing-vs-cifrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hashing vs cifrado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Salting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peppering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Peppering
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identidad-federada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identidad federada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identidad federada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El problema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-es-la-federacion-de-identidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es la federación de identidades?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conceptos-clave-de-esta-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptos clave de esta clase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-la-proxima-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para la próxima clase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -975,10 +1796,275 @@
   
 
 
-<h1 id="en-construccion">En construcción</h1>
+<h1 id="clase-9-autenticacion-y-gestion-de-identidades-iam">Clase 9 — Autenticación y Gestión de Identidades (IAM)</h1>
 <blockquote>
-<p>Apuntes de esta clase próximamente.</p>
+<p><strong>Módulo:</strong> Ciberseguridad  </p>
 </blockquote>
+<hr />
+<h2 id="fundamentos-que-es-una-identidad-digital">Fundamentos: qué es una identidad digital?</h2>
+<p>Una <strong>identidad digital</strong> es el conjunto de atributos que representa a una entidad — persona, sistema, servicio o dispositivo — dentro de un sistema de información.  </p>
+<p>Gestionar identidades no es solo guardar usuarios y contraseñas. Es responder tres preguntas en cada interacción:  </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Quién sos?        →  Identidad
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Cómo lo probás?   →  Autenticación
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Qué podés hacer?  →  Autorización
+</code></pre></div>
+<p><strong>IAM (Identity and Access Management)</strong> es el conjunto de políticas, procesos y tecnologías que gestionan identidades digitales y controlan el acceso a los recursos.  </p>
+<hr />
+<h2 id="ciclo-de-vida-de-las-identidades">Ciclo de vida de las identidades</h2>
+<p>Una identidad no es estática — tiene un ciclo de vida completo que debe ser gestionado activamente.  </p>
+<p>El estándar <strong>ISO</strong> define el ciclo de vida de una identidad en un dominio como una secuencia de estados: Established (establecida), Active (activa) y Archived/Removed (archivada o eliminada). Sobre esa base, en la práctica operativa se distinguen las siguientes etapas:</p>
+<p><strong>Provisioning (alta):</strong> creación de la identidad y asignación inicial de atributos y accesos. El error más común es otorgar más accesos de los necesarios desde el inicio.</p>
+<p><strong>Gestión:</strong> modificación de atributos y accesos a medida que cambia el rol del usuario. Un empleado que cambia de área debe perder los accesos anteriores y ganar los nuevos — simultáneamente.</p>
+<p><strong>Revisión periódica (Access Review / Recertification):</strong> auditoría regular de que cada identidad tiene exactamente los accesos que necesita. Sin revisión periódica, los accesos se acumulan con el tiempo.</p>
+<p><strong>Deprovisioning (baja):</strong> revocación de todos los accesos cuando la identidad ya no es necesaria — un empleado que se va, un servicio que se da de baja, un contratista que termina su contrato.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Alta → Gestión activa → Revisión periódica → Baja
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  ↑_____________________________________________|
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>              ciclo continuo
+</code></pre></div>
+<hr />
+<h2 id="autenticacion-vs-autorizacion">Autenticación vs. Autorización</h2>
+<p>Estos dos conceptos ocurren en momentos distintos.</p>
+<p><strong>Autenticación (AuthN):</strong> verificar que una entidad es quien dice ser. Ocurre al inicio de la sesión.  </p>
+<p><strong>Autorización (AuthZ):</strong> determinar qué puede hacer esa entidad una vez autenticada. Ocurre en cada acceso a un recurso.  </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Usuario → AuthN → &quot;Sí, sos María&quot; → AuthZ → &quot;María puede leer /docs pero no /admin&quot;
+</code></pre></div>
+<p>Una autenticación exitosa no implica autorización para todo. Y una autorización sin autenticación sólida no tiene valor.  </p>
+<p><strong>Principio de mínimos privilegios (Least Privilege):</strong> cada identidad debe tener exactamente los accesos mínimos necesarios para cumplir su función — ni más ni menos. Limita el daño en caso de compromiso.  </p>
+<hr />
+<h2 id="credenciales-y-autenticacion">Credenciales y Autenticación</h2>
+<h3 id="que-es-una-credencial">Qué es una credencial?</h3>
+<p>Una <strong>credencial</strong> es una estructura de datos que vincula a un suscriptor con su identidad digital y los factores de autenticación asociados.</p>
+<p>Dicho de otra forma: es el mecanismo que un sistema acepta como prueba de identidad. Puede ser una contraseña, una clave criptográfica, un certificado digital, un token físico o una combinación de varios.</p>
+<p>La credencial no es la identidad en sí — es la <em>evidencia</em> de que quien la presenta tiene derecho a reclamar esa identidad.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Identidad  →  &quot;Soy María García, empleada de la empresa&quot;
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Credencial →  &quot;Acá está mi contraseña + código TOTP que lo prueban&quot;
+</code></pre></div>
+<h3 id="el-nombre-de-usuario-es-parte-de-la-identidad-o-de-la-credencial">El nombre de usuario es parte de la identidad o de la credencial?</h3>
+<p>Una distinción que genera confusión frecuente:</p>
+<p><strong>Según NIST SP 800-63-4</strong>, el nombre de usuario es un <strong>identificador</strong> — un atributo que permite distinguir unívocamente a un suscriptor dentro de un dominio. Los identificadores son parte de la <strong>identidad</strong>, no de la credencial. La credencial es lo que vincula esa identidad con un factor de autenticación.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Identidad  →  incluye  →  identificador (username)
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Credencial →  vincula  →  identidad + factor de autenticación (password, token, etc.)
+</code></pre></div>
+<p><strong>Según ISO</strong>, la identidad es un conjunto de atributos de una entidad en un dominio. El nombre de usuario es uno de esos atributos — pertenece a la identidad.</p>
+<p>En la práctica, username y password se ingresan y validan juntos, lo que genera confusión. Pero conceptualmente tienen roles distintos: el username <strong>identifica</strong>, la password <strong>autentica</strong>. Un username comprometido no implica acceso sin la credencial. Y una credencial sin identificador asociado tampoco sirve. Son capas complementarias.  </p>
+<hr />
+<h3 id="autenticacion-de-usuario-vs-autenticacion-de-mensajes">Autenticación de usuario vs. autenticación de mensajes</h3>
+<p>Antes de entrar en los factores, vale distinguir dos usos del término:</p>
+<p><strong>Autenticación de usuario:</strong> identificación de un usuario mediante una identidad en el sistema. El sistema verifica que quien intenta acceder es quien dice ser.  </p>
+<p><strong>Autenticación de mensajes:</strong> procedimiento para verificar que el contenido de un mensaje no fue alterado durante una comunicación. Es lo que vimos en Clase 6 con MAC y firmas digitales.  </p>
+<p>Son problemas distintos con soluciones distintas. En IAM nos enfocamos en autenticación de usuario.  </p>
+<hr />
+<h3 id="factores-de-autenticacion">Factores de autenticación</h3>
+<p>La autenticación se basa en uno o más de tres factores:</p>
+<p><strong>Algo que sabés (Knowledge):</strong> contraseña, PIN, pregunta de seguridad. El factor más común y el más débil — puede ser robado, adivinado o filtrado sin que el usuario lo sepa.</p>
+<p><strong>Algo que tenés (Possession):</strong> token físico, smartphone, tarjeta inteligente, llave de seguridad (FIDO2/YubiKey). Requiere acceso físico al dispositivo.</p>
+<p><strong>Algo que sos (Inherence):</strong> biometría — huella digital, reconocimiento facial, iris, voz. No se puede olvidar pero tampoco se puede cambiar si se compromete.</p>
+<p><strong>Contexto (Context):</strong> ubicación geográfica, dispositivo conocido, horario habitual, comportamiento. No es un factor en el sentido clásico de NIST SP 800-63-4, que define solo tres. El contexto aparece como señal adicional en frameworks modernos de <strong>autenticación adaptativa o basada en riesgo</strong>, entre ellos: NIST SP 800-207 (Zero Trust Architecture), que incorpora señales contextuales en la política de acceso; el modelo de Conditional Access de Microsoft Entra ID; y el Risk-Based Authentication de OWASP Authentication Cheat Sheet. En estos frameworks, el contexto no reemplaza a los tres factores — los complementa para ajustar dinámicamente el nivel de autenticación requerido.</p>
+<h3 id="contrasenas-el-eslabon-mas-debil">Contraseñas — el eslabón más débil</h3>
+<p>La contraseña sigue siendo el mecanismo más usado pero tiene problemas estructurales:  </p>
+<ul>
+<li>Reutilización entre servicios — si una base de datos se filtra, todos los servicios donde se usa esa contraseña quedan expuestos.</li>
+<li>Phishing — el usuario entrega la contraseña creyendo que está en el sitio legítimo.</li>
+<li>Fuerza bruta / credential stuffing — listas de credenciales filtradas se prueban automáticamente en otros servicios.</li>
+<li>Almacenamiento inseguro — contraseñas guardadas en texto plano o con hashes débiles (MD5).</li>
+</ul>
+<p><strong>Buenas prácticas:</strong> contraseñas largas (&gt;16 caracteres) sobre contraseñas complejas, no reutilizar, usar un gestor de contraseñas, habilitar MFA siempre que sea posible. (Complementar con lo que dijimos en clase!)</p>
+<h3 id="ataques-a-la-autenticacion">Ataques a la autenticación</h3>
+<p>Conocer los vectores de ataque explica por qué los controles son necesarios:  </p>
+<p><strong>Ataques al cliente:</strong> el adversario intenta autenticarse sin acceso al host — suplantando al usuario legítimo mediante credenciales robadas o fabricadas.</p>
+<p><strong>Ataques al host:</strong> ataque directo al repositorio de credenciales — el archivo de contraseñas, los templates biométricos o los passcodes de tokens almacenados en el servidor.</p>
+<p><strong>Escucha / intercepción:</strong> el adversario observa las credenciales en tránsito — captura de contraseñas en texto plano, ataques de proximidad.</p>
+<p><strong>Replay:</strong> el adversario captura una respuesta de autenticación válida y la retransmite para hacerse pasar por el usuario. Los tokens OTP y los nonces evitan este ataque.</p>
+<p><strong>Troyanos:</strong> software malicioso que se disfraza de aplicación o dispositivo legítimo para capturar credenciales en el momento de ingreso.</p>
+<p><strong>DoS sobre autenticación:</strong> el adversario genera una cantidad masiva de intentos de autenticación para deshabilitar el servicio o provocar bloqueos de cuentas masivos.</p>
+<hr />
+<h3 id="mfa-autenticacion-multifactor">MFA — Autenticación Multifactor</h3>
+<p><strong>MFA</strong> requiere que el usuario pruebe su identidad con al menos dos factores de distintas categorías. Combinar dos factores del mismo tipo (ej: dos contraseñas) no es MFA — no agrega seguridad real.</p>
+<p><strong>Knowledge-based authentication (KBA)</strong> — respuestas a preguntas de seguridad — no puede usarse como único factor de autenticación según NIST SP 800-63-4. Las respuestas son frecuentemente públicas, adivinables o filtradas en brechas de datos.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Factor 1: contraseña (algo que sabés)
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Factor 2: código TOTP en el celular (algo que tenés)
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>→  Aunque roben la contraseña, no pueden entrar sin el segundo factor
+</code></pre></div>
+<p><strong>Tipos de segundo factor:</strong></p>
+<ul>
+<li><strong>TOTP (Time-based One-Time Password):</strong> código de 6 dígitos que cambia cada 30 segundos, generado por una app (Google Authenticator, Authy). Estándar RFC 6238.</li>
+<li><strong>Push notification:</strong> el sistema envía una notificación al dispositivo registrado — el usuario aprueba o rechaza.</li>
+<li><strong>SMS OTP:</strong> código enviado por SMS. Conveniente pero vulnerable a SIM swapping — no recomendado para sistemas críticos.</li>
+<li><strong>Hardware token (FIDO2 / WebAuthn):</strong> llave física (YubiKey, etc.) que usa criptografía de clave pública. El factor más fuerte — resistente a phishing.</li>
+<li><strong>Biometría:</strong> huella, face ID. Conveniente pero con implicancias de privacidad y revocación.  </li>
+</ul>
+<blockquote>
+<p>La autenticación continua y basada en riesgo — donde cada acceso se evalúa dinámicamente en lugar de confiar en una sesión establecida al inicio — es la base del modelo Zero Trust. Lo desarrollamos en <a href="../clase-10-redes-infra/">Clase 10</a>.</p>
+</blockquote>
+<hr />
+<h2 id="modelo-de-registro-y-ciclo-de-vida-de-credenciales">Modelo de registro y ciclo de vida de credenciales</h2>
+<p>Antes de poder autenticarse, un usuario debe estar registrado. El NIST SP 800-63-4 define el siguiente modelo:</p>
+<p><strong>Solicitante → Suscriptor:</strong> un individuo solicita acceso a un servicio. El <strong>Credential Service Provider (CSP)</strong> valida su identidad y, si es exitosa, lo convierte en <strong>suscriptor</strong>. Las cuentas de suscriptores identifican de forma única a cada usuario y almacenan sus atributos y factores de autenticación.</p>
+<p><strong>Credencial:</strong> estructura de datos que vincula al suscriptor con su identidad digital y los factores de autenticación asociados — contraseñas, claves criptográficas o tokens.</p>
+<p><strong>Proceso de autenticación:</strong>
+- La parte que se autentica se llama <strong>demandante (claimant)</strong>.
+- La parte que verifica se llama <strong>verificador (verifier)</strong>.
+- El demandante usa uno o más autenticadores para generar un output que envía al verificador.
+- El verificador valida ese output y, si es correcto, abre una sesión autenticada.</p>
+<h3 id="ciclo-de-vida-de-la-credencial">Ciclo de vida de la credencial</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Enrolamiento → Emisión → Mantenimiento → Revocación / Expiración
+</code></pre></div>
+<ul>
+<li><strong>Enrolamiento:</strong> validación de identidad y captura de datos del solicitante.</li>
+<li><strong>Emisión:</strong> creación y entrega de la credencial al suscriptor.</li>
+<li><strong>Mantenimiento:</strong> actualizaciones, reseteo de PIN, re-enrolamiento, suspensión.</li>
+<li><strong>Revocación / expiración:</strong> la credencial deja de ser válida — por tiempo, por compromiso o por baja del usuario.  </li>
+</ul>
+<hr />
+<h2 id="autorizacion">Autorización</h2>
+<h3 id="modelos-de-control-de-acceso">Modelos de control de acceso</h3>
+<p>Una vez autenticada la identidad, el sistema decide qué puede hacer. Hay distintos modelos para tomar esa decisión:</p>
+<p><strong>DAC (Discretionary Access Control):</strong> el propietario del recurso decide quién puede acceder. Flexible pero difícil de auditar a escala. Ejemplo: permisos de archivos en Linux (<code>chmod</code>).</p>
+<p><strong>MAC (Mandatory Access Control):</strong> el sistema asigna niveles de seguridad a sujetos y objetos. El acceso se permite sólo si el nivel del sujeto es suficiente. Usado en entornos militares y gubernamentales.</p>
+<p><strong>RBAC (Role-Based Access Control):</strong> los accesos se asignan a roles, y los roles se asignan a usuarios. Un empleado no tiene permisos directos — los hereda de su rol. Estándar en la mayoría de las organizaciones.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Usuario → tiene → Rol → tiene → Permisos → sobre → Recursos
+</code></pre></div>
+<p><strong>ABAC (Attribute-Based Access Control):</strong> el acceso se decide evaluando atributos del sujeto, del objeto y del contexto. Más expresivo que RBAC — permite políticas como "un médico puede ver historiales clínicos de sus propios pacientes, en horario laboral, desde dispositivos corporativos".</p>
+<h3 id="segregacion-de-funciones-sod-separation-of-duties">Segregación de funciones (SoD — Separation of Duties)</h3>
+<p>Ninguna persona debe tener suficientes privilegios para completar una transacción crítica de forma unilateral. El objetivo es prevenir fraude y errores no detectados.</p>
+<p>Ejemplo clásico: la persona que aprueba un pago no puede ser la misma que lo ejecuta. En sistemas de software: el desarrollador que escribe código no debería poder desplegarlo directamente en producción.</p>
+<p>Stallings identifica SoD como una política clave de control de acceso: ningún usuario individual debería tener suficientes privilegios para abusar de ellos sin ser detectado. Esto implica distribuir tareas sensibles entre múltiples usuarios de forma que cada uno actúe como control del otro.</p>
+<p><strong>En la práctica:</strong> si un usuario tiene acceso de escritura a una base de datos de transacciones, no debería tener también acceso al log de auditoría de esas transacciones.  </p>
+<hr />
+<h2 id="funciones-del-nist-csf-en-identidades">Funciones del NIST CSF en identidades</h2>
+<p>El NIST CSF v2.0 no tiene una función dedicada a identidades, pero IAM es transversal a todo el framework:</p>
+<p><strong>Govern:</strong> políticas de gestión de identidades, quién es responsable de provisioning y deprovisioning, criterios de acceso mínimo.</p>
+<p><strong>Identify:</strong> inventario de identidades — usuarios humanos, cuentas de servicio, identidades de máquinas, APIs. Sin saber qué identidades existen, no se puede gestionar el riesgo.</p>
+<p><strong>Protect:</strong> controles de acceso, MFA, gestión de credenciales, políticas de contraseñas, PAM (Privileged Access Management) para cuentas con altos privilegios.</p>
+<p><strong>Detect:</strong> monitoreo de autenticaciones anómalas — accesos fuera de horario, desde ubicaciones inusuales, múltiples fallos de autenticación, uso de cuentas inactivas.</p>
+<p><strong>Respond:</strong> respuesta ante incidentes de identidad — bloqueo inmediato de cuentas comprometidas, revocación de tokens, reseteo forzado de credenciales.</p>
+<p><strong>Recover:</strong> restauración del acceso legítimo después de un incidente, revisión de qué accesos se otorgaron durante el ataque.  </p>
+<hr />
+<h2 id="protocolos-oauth-20-openid-connect-y-jwt">Protocolos: OAuth 2.0, OpenID Connect y JWT</h2>
+<h3 id="el-problema-que-resuelven">El problema que resuelven</h3>
+<p>Antes de estos protocolos, si una aplicación necesitaba acceder a tus datos en otro servicio (por ejemplo, importar tus contactos de Google), la solución era darle tu contraseña de Google. Esto es obviamente inseguro — la aplicación tendría acceso total a tu cuenta.</p>
+<p>OAuth 2.0 resuelve este problema con <strong>delegación de acceso</strong>: podés autorizar a una aplicación a acceder a recursos específicos en tu nombre, sin compartir tu contraseña.</p>
+<h3 id="oauth-20-delegacion-de-acceso">OAuth 2.0 — Delegación de acceso</h3>
+<p>OAuth 2.0 es un framework de autorización, no de autenticación. Define cómo una aplicación (cliente) obtiene acceso limitado a recursos de un usuario en un servidor de recursos, con la autorización del usuario y a través de un servidor de autorización.</p>
+<p><strong>Roles:</strong>
+- <strong>Resource Owner:</strong> el usuario que posee los datos.
+- <strong>Client:</strong> la aplicación que quiere acceder.
+- <strong>Authorization Server:</strong> el servidor que emite tokens (ej: Google, GitHub).
+- <strong>Resource Server:</strong> el servidor que aloja los datos protegidos.</p>
+<p><strong>Flujo simplificado (Authorization Code Flow):</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>1. Cliente redirige al usuario al Authorization Server
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>2. Usuario se autentica y aprueba los scopes solicitados
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>3. Authorization Server devuelve un authorization code al cliente
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>4. Cliente intercambia el code por un access token (comunicación server-to-server)
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>5. Cliente usa el access token para acceder al Resource Server
+</code></pre></div>
+<p><strong>Scopes:</strong> definen el nivel de acceso solicitado. El usuario puede aprobar o rechazar cada scope. Ejemplo: <code>read:contacts</code>, <code>write:calendar</code>.</p>
+<p><strong>Tokens:</strong>
+- <strong>Access token:</strong> credencial de corta duración para acceder a recursos.
+- <strong>Refresh token:</strong> credencial de larga duración para obtener nuevos access tokens sin reautenticar al usuario.</p>
+<h3 id="openid-connect-oidc-autenticacion-sobre-oauth">OpenID Connect (OIDC) — Autenticación sobre OAuth</h3>
+<p>OAuth 2.0 sólo gestiona autorización — no dice nada sobre quién es el usuario. OpenID Connect agrega una capa de autenticación sobre OAuth 2.0.</p>
+<p>OIDC introduce el <strong>ID token</strong>: un JWT firmado que contiene información sobre la identidad del usuario autenticado — quién es, cuándo se autenticó, con qué método.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>OAuth 2.0  →  &quot;Esta app puede leer tus contactos&quot;  (autorización)
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>OIDC       →  &quot;Este usuario es maria@ejemplo.com&quot;   (autenticación)
+</code></pre></div>
+<p>OIDC es la base del <strong>Single Sign-On (SSO)</strong>: autenticarse una sola vez con un Identity Provider (IdP) — Google, Microsoft, Okta — y acceder a múltiples aplicaciones sin volver a ingresar credenciales.</p>
+<h3 id="jwt-json-web-token">JWT — JSON Web Token</h3>
+<p>Un <strong>JWT</strong> es el formato de token más usado en OAuth 2.0 y OIDC. Es un objeto JSON codificado en Base64 y firmado criptográficamente, compuesto por tres partes separadas por puntos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>header.payload.signature
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>eyJhbGciOiJSUzI1NiJ9  .  eyJzdWIiOiJ1c2VyMTIzIiwiZXhwIjoxN...  .  [firma]
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>      header                         payload                         signature
+</code></pre></div>
+<p><strong>Header:</strong> algoritmo de firma (ej: RS256, HS256).</p>
+<p><strong>Payload (claims):</strong> datos del token.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">{</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="nt">&quot;sub&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user123&quot;</span><span class="p">,</span><span class="w">           </span><span class="c1">// subject — identificador del usuario</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span><span class="nt">&quot;iss&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://auth.ejemplo.com&quot;</span><span class="p">,</span><span class="w">  </span><span class="c1">// issuer</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">  </span><span class="nt">&quot;aud&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mi-app&quot;</span><span class="p">,</span><span class="w">            </span><span class="c1">// audience</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">  </span><span class="nt">&quot;exp&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1716000000</span><span class="p">,</span><span class="w">          </span><span class="c1">// expiration (Unix timestamp)</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">  </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;maria@ejemplo.com&quot;</span><span class="p">,</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">  </span><span class="nt">&quot;roles&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;admin&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;editor&quot;</span><span class="p">]</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="p">}</span>
+</code></pre></div></p>
+<p><strong>Signature:</strong> firma criptográfica que garantiza que el token no fue modificado. Con RS256, el Authorization Server firma con su clave privada y cualquier receptor puede verificar con la clave pública.</p>
+<p><strong>Ventajas:</strong> stateless — el servidor no necesita consultar una base de datos para validar el token, sólo verifica la firma.</p>
+<p><strong>Riesgos:</strong> el payload es sólo codificado, no cifrado — visible para cualquiera que lo intercepte. Nunca incluir información sensible en el payload. Y la expiración debe ser corta — un JWT robado es válido hasta que expire.  </p>
+<hr />
+<h2 id="guardado-de-credenciales">Guardado de credenciales</h2>
+<p>Cómo se almacenan las contraseñas importa tanto como cómo se usan. Una base de datos comprometida con contraseñas bien guardadas no expone a los usuarios; una con contraseñas en texto plano sí.</p>
+<h3 id="hashing-vs-cifrado">Hashing vs cifrado</h3>
+<p>Las contraseñas <strong>no deben cifrarse</strong> — si la clave de cifrado se compromete, todas las contraseñas quedan expuestas. Deben <strong>hashearse</strong> con una función de hash diseñada para contraseñas (lenta por diseño): bcrypt, scrypt, Argon2.</p>
+<p>Un hash de contraseña permite verificar si una contraseña ingresada es correcta sin almacenar la contraseña original.</p>
+<h3 id="salting">Salting</h3>
+<p>Un <strong>salt</strong> es un valor aleatorio único generado por usuario que se concatena a la contraseña antes de hashear:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>hash = H(password ∥ salt)
+</code></pre></div>
+<p><strong>Por qué importa:</strong> sin salt, dos usuarios con la misma contraseña tendrían el mismo hash — un atacante que rompe uno rompe todos. Con salt único por usuario, el atacante debe atacar cada hash individualmente. También invalida los ataques de rainbow table — tablas precalculadas de hashes que permiten revertirlos rápidamente.</p>
+<h3 id="peppering">Peppering</h3>
+<p>Un <strong>pepper</strong> es un valor secreto adicional compartido por todas las contraseñas de la base de datos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>hash = H(password ∥ salt ∥ pepper)
+</code></pre></div>
+<p>A diferencia del salt, el pepper:
+- Es el mismo para todos los usuarios
+- No se almacena en la base de datos — se guarda en un vault o HSM separado
+- Si la base de datos se filtra sin el pepper, los hashes son inútiles
+- Cambiar el pepper requiere que todos los usuarios restablezcan su contraseña  </p>
+<hr />
+<h2 id="identidad-federada">Identidad federada</h2>
+<h3 id="el-problema">El problema</h3>
+<p>En entornos modernos, los usuarios necesitan acceder a sistemas de múltiples organizaciones. Dos preguntas concretas:</p>
+<ul>
+<li>Cómo confiar en identidades de usuarios de una organización externa que necesitan acceder a nuestros sistemas?</li>
+<li>Cómo garantizar nuestras propias identidades cuando colaboramos con organizaciones externas?</li>
+</ul>
+<h3 id="que-es-la-federacion-de-identidades">¿Qué es la federación de identidades?</h3>
+<p><strong>Identity federation</strong> es el conjunto de tecnologías, estándares, políticas y procesos que permiten a una organización confiar en identidades digitales, atributos y credenciales creadas y emitidas por otra organización.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Organización A          Organización B
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>(Identity Provider)  ←→  (Service Provider)
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>&quot;Nosotros garantizamos     &quot;Confiamos en tu
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a> que este usuario          garantía para dar
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a> es quien dice ser&quot;        acceso a nuestros
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>                           recursos&quot;
+</code></pre></div>
+<p><strong>Beneficios:</strong>
+- Reduce costos de gestión de identidades
+- Mejora la experiencia del usuario — un solo login para múltiples sistemas
+- Minimiza la exposición de datos — se comparten solo los atributos necesarios
+- Permite gestión centralizada de identidades</p>
+<p>Los protocolos que implementan federación de identidades son SAML (legacy), OAuth 2.0 y OpenID Connect (estándar actual).  </p>
+<hr />
+<h2 id="conceptos-clave-de-esta-clase">Conceptos clave de esta clase</h2>
+<ul>
+<li><strong>IAM:</strong> gestión del ciclo de vida completo de identidades — alta, gestión activa, revisión periódica y baja. El deprovisioning tardío es un vector de ataque real.</li>
+<li><strong>AuthN vs AuthZ:</strong> autenticación verifica identidad, autorización verifica permisos. Son distintos y ocurren en momentos distintos.</li>
+<li><strong>Least Privilege:</strong> acceso mínimo necesario. Limita el daño en caso de compromiso.</li>
+<li><strong>Factores de autenticación:</strong> algo que sabés, tenés o sos. MFA combina al menos dos factores distintos.</li>
+<li><strong>MFA:</strong> el segundo factor más fuerte es FIDO2/WebAuthn (resistente a phishing). SMS es el más débil.</li>
+<li><strong>RBAC:</strong> accesos asignados a roles, no a usuarios directamente. Estándar en la mayoría de organizaciones.</li>
+<li><strong>Segregación de funciones:</strong> ninguna persona debe poder completar una transacción crítica sola.</li>
+<li><strong>OAuth 2.0:</strong> delegación de acceso sin compartir contraseñas. Access token + refresh token.</li>
+<li><strong>OIDC:</strong> autenticación sobre OAuth. ID token (JWT) con identidad del usuario. Base del SSO.</li>
+<li><strong>JWT:</strong> token firmado criptográficamente. Stateless. Payload visible — nunca incluir datos sensibles. Expiración corta.</li>
+<li><strong>Zero Trust:</strong> modelo de arquitectura que elimina la confianza implícita basada en ubicación de red. Se desarrolla en Clase 10.</li>
+</ul>
+<hr />
+<h2 id="para-la-proxima-clase">Para la próxima clase</h2>
+<p><strong>Seguridad en redes e infraestructura:</strong> firewalls, IDS/IPS, VPN, segmentación de red, DNS security y protocolos de red seguros.</p>
+<hr />
+<h2 id="fuentes">Fuentes</h2>
+<ul>
+<li>Stallings, W. — <em>Computer Security: Principles and Practice</em>, Cap. 3 y 23</li>
+<li>Stallings, W. — <em>Cryptography and Network Security: Principles and Practice</em>, Cap. 16</li>
+<li>ISO/IEC 24760-1:2025 — <em>Information Security, Cybersecurity and Privacy Protection: A Framework for Identity Management, Part 1: Core Concepts and Terminology</em></li>
+<li>NIST SP 800-63-4 — <em>Digital Identity Guidelines: Authentication and Lifecycle Management</em></li>
+<li>NIST SP 800-162 — <em>Guide to Attribute Based Access Control</em></li>
+<li>RFC 6749 — <em>OAuth 2.0 Authorization Framework</em></li>
+<li>RFC 6238 — <em>TOTP: Time-Based One-Time Password Algorithm</em></li>
+<li>OpenID Connect Core 1.0</li>
+<li>RFC 9068 — <em>JSON Web Tokens (JWT)</em></li>
+</ul>
+<hr />
 
 
 
