@@ -750,7 +750,7 @@
   <a href="#por-que-es-dificil-romperlo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Por qué es difícil romperlo?
+        ¿Por qué es difícil romperlo?
       
     </span>
   </a>
@@ -811,7 +811,7 @@
   <a href="#por-que-rsa-sigue-siendo-tan-usado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Por qué RSA sigue siendo tan usado?
+        ¿Por qué RSA sigue siendo tan usado?
       
     </span>
   </a>
@@ -1393,7 +1393,7 @@
   <a href="#por-que-es-dificil-romperlo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Por qué es difícil romperlo?
+        ¿Por qué es difícil romperlo?
       
     </span>
   </a>
@@ -1454,7 +1454,7 @@
   <a href="#por-que-rsa-sigue-siendo-tan-usado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Por qué RSA sigue siendo tan usado?
+        ¿Por qué RSA sigue siendo tan usado?
       
     </span>
   </a>
@@ -1615,7 +1615,7 @@
 </code></pre></div>
 <hr />
 <h2 id="seguridad-de-rsa">Seguridad de RSA</h2>
-<h3 id="por-que-es-dificil-romperlo">Por qué es difícil romperlo?</h3>
+<h3 id="por-que-es-dificil-romperlo">¿Por qué es difícil romperlo?</h3>
 <p>Para romper RSA un atacante necesita calcular <strong>d</strong> a partir de <strong>(n, e)</strong>. Para eso necesita <strong>φ(n)</strong>. Para calcular <strong>φ(n) = (p-1)(q-1)</strong> necesita conocer <strong>p</strong> y <strong>q</strong>. Y para obtener <strong>p</strong> y <strong>q</strong> necesita <strong>factorizar n</strong>.</p>
 <p>La cadena de reducciones es:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Romper RSA  →  calcular d  →  calcular φ(n)  →  factorizar n
@@ -1731,12 +1731,12 @@
 </tr>
 </tbody>
 </table>
-<h3 id="por-que-rsa-sigue-siendo-tan-usado">Por qué RSA sigue siendo tan usado?</h3>
+<h3 id="por-que-rsa-sigue-siendo-tan-usado">¿Por qué RSA sigue siendo tan usado?</h3>
 <p>RSA tiene una propiedad que DH/ElGamal no tienen de forma natural: la <strong>misma operación matemática sirve tanto para cifrar como para firmar</strong>. Invertir los roles de <strong>e</strong> y <strong>d</strong> permite crear firmas digitales — algo que veremos en detalle en la Clase 6.</p>
 <p>Además, RSA está embebido en toda la infraestructura de certificados digitales (X.509, TLS, HTTPS) desde los años 90. Su reemplazo es un proceso que llevará décadas.</p>
 <hr />
 <h2 id="distribucion-de-claves-dh-vs-rsa">Distribución de claves: DH vs RSA</h2>
-<p>Para qué se usa cada uno en TLS?</p>
+<p>¿Para qué se usa cada uno en TLS?</p>
 <p><strong>DH efímero (DHE/ECDHE):</strong> establece el secreto de sesión. Cada conexión usa un par DH nuevo — esto garantiza <strong>Perfect Forward Secrecy (PFS)</strong>: si la clave privada del servidor se compromete en el futuro, las sesiones pasadas no se pueden descifrar.</p>
 <p><strong>RSA (o certificado con clave RSA):</strong> autentica al servidor. El cliente verifica que realmente está hablando con el servidor correcto y no con un impostor.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>TLS 1.3:
