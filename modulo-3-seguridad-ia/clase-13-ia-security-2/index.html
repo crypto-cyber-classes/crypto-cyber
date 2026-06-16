@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#en-construccion" class="md-skip">
+        <a href="#clase-13-ia-security-pt-2-amenazas-en-desarrollo-runtime-y-controles-generales" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -906,6 +906,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clase 13 — Amenazas y Controles II
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -922,6 +940,297 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-amenazas-en-tiempo-de-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Amenazas en tiempo de desarrollo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Amenazas en tiempo de desarrollo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-model-poisoning-envenenamiento-del-modelo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. Model Poisoning (Envenenamiento del modelo)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1. Model Poisoning (Envenenamiento del modelo)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-data-poisoning-envenenamiento-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.1. Data poisoning (Envenenamiento de datos)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-model-poisoning-en-el-entorno-de-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.2. Model poisoning en el entorno de desarrollo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-supply-chain-model-poisoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.3. Supply-chain model poisoning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-filtracion-de-datos-sensibles-en-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. Filtración de datos sensibles en desarrollo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2. Filtración de datos sensibles en desarrollo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-filtracion-de-datos-de-entrenamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1. Filtración de datos de entrenamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122-filtracion-de-parametros-del-modelo-robo-en-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.2. Filtración de parámetros del modelo (robo en desarrollo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123-filtracion-de-codigo-fuente-o-configuracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.3. Filtración de código fuente o configuración
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-amenazas-en-runtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Amenazas en runtime
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Amenazas en runtime">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-amenazas-convencionales-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Amenazas convencionales de software
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-runtime-model-poisoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. Runtime model poisoning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-robo-del-modelo-en-runtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. Robo del modelo en runtime
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-manejo-incorrecto-de-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4. Manejo incorrecto de outputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-filtracion-de-datos-de-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5. Filtración de datos de input
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-filtracion-y-manipulacion-de-datos-de-contexto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6. Filtración y manipulación de datos de contexto
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-controles-generales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Controles generales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Controles generales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-gobierno-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Gobierno (Governance)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-limitacion-de-datos-sensibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Limitación de datos sensibles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-limitacion-de-comportamiento-no-deseado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. Limitación de comportamiento no deseado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-mapa-de-amenazas-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen: mapa de amenazas completo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -955,6 +1264,286 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-amenazas-en-tiempo-de-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Amenazas en tiempo de desarrollo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Amenazas en tiempo de desarrollo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-model-poisoning-envenenamiento-del-modelo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. Model Poisoning (Envenenamiento del modelo)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1. Model Poisoning (Envenenamiento del modelo)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-data-poisoning-envenenamiento-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.1. Data poisoning (Envenenamiento de datos)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-model-poisoning-en-el-entorno-de-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.2. Model poisoning en el entorno de desarrollo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-supply-chain-model-poisoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.3. Supply-chain model poisoning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-filtracion-de-datos-sensibles-en-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. Filtración de datos sensibles en desarrollo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2. Filtración de datos sensibles en desarrollo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-filtracion-de-datos-de-entrenamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1. Filtración de datos de entrenamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122-filtracion-de-parametros-del-modelo-robo-en-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.2. Filtración de parámetros del modelo (robo en desarrollo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123-filtracion-de-codigo-fuente-o-configuracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.3. Filtración de código fuente o configuración
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-amenazas-en-runtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Amenazas en runtime
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Amenazas en runtime">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-amenazas-convencionales-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Amenazas convencionales de software
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-runtime-model-poisoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. Runtime model poisoning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-robo-del-modelo-en-runtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. Robo del modelo en runtime
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-manejo-incorrecto-de-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4. Manejo incorrecto de outputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-filtracion-de-datos-de-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5. Filtración de datos de input
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-filtracion-y-manipulacion-de-datos-de-contexto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6. Filtración y manipulación de datos de contexto
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-controles-generales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Controles generales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Controles generales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-gobierno-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Gobierno (Governance)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-limitacion-de-datos-sensibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Limitación de datos sensibles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-limitacion-de-comportamiento-no-deseado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. Limitación de comportamiento no deseado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-mapa-de-amenazas-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen: mapa de amenazas completo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -973,10 +1562,144 @@
   
 
 
-<h1 id="en-construccion">En construcción</h1>
+<h1 id="clase-13-ia-security-pt-2-amenazas-en-desarrollo-runtime-y-controles-generales">Clase 13 — IA Security pt. 2: Amenazas en desarrollo, runtime y controles generales</h1>
 <blockquote>
-<p>Apuntes de esta clase próximamente.</p>
+<p><strong>Módulo:</strong> Ciberseguridad</p>
 </blockquote>
+<hr />
+<h2 id="1-amenazas-en-tiempo-de-desarrollo">1. Amenazas en tiempo de desarrollo</h2>
+<p>El entorno de desarrollo de un sistema de IA introduce activos nuevos y sensibles que no aparecen en el desarrollo de software tradicional: datos de entrenamiento reales, parámetros del modelo, configuración, código. Esto amplía la superficie de ataque de maneras específicas.</p>
+<p><strong>Particularidades del entorno de desarrollo de IA:</strong>
+- Los datos de entrenamiento son datos reales y sensibles, no datos de prueba ficticios
+- Los parámetros, el código y la configuración son propiedad intelectual crítica
+- La cadena de suministro incluye elementos nuevos: datos externos, modelos pre-entrenados, componentes de ML
+- Componentes externos pueden ejecutarse dentro del entorno de desarrollo, con acceso a datos sensibles</p>
+<hr />
+<h3 id="11-model-poisoning-envenenamiento-del-modelo">1.1. Model Poisoning (Envenenamiento del modelo)</h3>
+<p>El envenenamiento del modelo es cualquier ataque que altera el comportamiento del modelo modificando sus datos de entrenamiento, sus parámetros, o elementos del entorno de desarrollo. El objetivo es que el modelo produzca outputs incorrectos o maliciosos.</p>
+<h4 id="111-data-poisoning-envenenamiento-de-datos">1.1.1. Data poisoning (Envenenamiento de datos)</h4>
+<p>El atacante manipula los datos de entrenamiento antes o durante el proceso de entrenamiento. Puede hacerlo directamente (si tiene acceso al dataset) o a través de la cadena de suministro (si los datos provienen de fuentes externas).</p>
+<p><strong>Ejemplo:</strong> Hechos falsos publicados en internet que son incorporados al dataset de un LLM durante su entrenamiento, causando que el modelo los reproduzca como verdaderos.</p>
+<p><strong>Controles:</strong>
+- Mayor volumen de datos de entrenamiento para diluir datos maliciosos (<em>more train data</em>)
+- Control de calidad de datos (<em>data quality control</em>) para intentar detectar datos maliciosos
+- Distorsión aleatoria de los datos de entrenamiento para reducir la influencia de muestras individuales (<em>train data distortion</em>)
+- Modelos robustos al envenenamiento (<em>poison robust model</em>)</p>
+<h4 id="112-model-poisoning-en-el-entorno-de-desarrollo">1.1.2. Model poisoning en el entorno de desarrollo</h4>
+<p>El atacante manipula directamente los parámetros del modelo, el código, la configuración o las librerías dentro del entorno de desarrollo. No necesita tocar los datos de entrenamiento.</p>
+<h4 id="113-supply-chain-model-poisoning">1.1.3. Supply-chain model poisoning</h4>
+<p>El atacante compromete un modelo pre-entrenado que la organización va a usar como base. La mayoría de los modelos actuales se obtienen de repositorios externos (open source, APIs de proveedores) y luego se hace fine-tunning. Estos modelos pueden haber sido manipulados en el origen o en tránsito.</p>
+<p>Si el modelo pre-entrenado comprometido se usa para entrenar otro modelo, el ataque se denomina <strong>transfer learning attack</strong>: el envenenamiento se propaga a través de la cadena de entrenamiento.</p>
+<p><strong>Tipos de manipulación en supply chain:</strong>
+- Envenenamiento de los datos usados para pre-entrenar el modelo
+- Modificación directa de los parámetros del modelo antes de su distribución</p>
+<p><strong>Control:</strong> Gestión de la cadena de suministro de modelos y datos (<em>supply chain manage</em>) — verificar la procedencia e integridad de modelos y datos externos.</p>
+<hr />
+<h3 id="12-filtracion-de-datos-sensibles-en-desarrollo">1.2. Filtración de datos sensibles en desarrollo</h3>
+<p>A diferencia del software tradicional, donde los entornos de desarrollo usan datos ficticios, el entorno de desarrollo de IA contiene datos reales y sensibles que, si se filtran, pueden causar brechas de confidencialidad significativas. </p>
+<h4 id="121-filtracion-de-datos-de-entrenamiento">1.2.1. Filtración de datos de entrenamiento</h4>
+<p>Acceso no autorizado a los datos usados para entrenar el modelo. Puede exponer datos personales, datos sensibles, secretos comerciales, o información confidencial de clientes.</p>
+<h4 id="122-filtracion-de-parametros-del-modelo-robo-en-desarrollo">1.2.2. Filtración de parámetros del modelo (robo en desarrollo)</h4>
+<p>Acceso no autorizado a los parámetros del modelo durante el desarrollo. Equivale al robo de propiedad intelectual y permite al atacante construir ataques más sofisticados contra el sistema en producción.</p>
+<h4 id="123-filtracion-de-codigo-fuente-o-configuracion">1.2.3. Filtración de código fuente o configuración</h4>
+<p>Acceso no autorizado al código fuente, configuración del modelo o documentación técnica. Expone detalles de implementación que pueden facilitar otros ataques.</p>
+<p><strong>Control general:</strong> Seguridad del entorno de desarrollo (<em>dev security</em>) — aplicar controles de seguridad tradicionales (cifrado, control de acceso, monitoreo) a los activos específicos de IA: datos de entrenamiento, parámetros, código y configuración.</p>
+<hr />
+<h2 id="2-amenazas-en-runtime">2. Amenazas en runtime</h2>
+<p>Las amenazas en runtime son ataques al sistema de IA en operación, por fuera de la inferencia. A diferencia de las amenazas vía uso (que se realizan enviando inputs al modelo), estas son amenazas a la infraestructura que soporta el sistema.</p>
+<hr />
+<h3 id="21-amenazas-convencionales-de-software">2.1. Amenazas convencionales de software</h3>
+<p>Un sistema de IA es un sistema de software y por lo tanto es vulnerable a cualquier ataque convencional: SQL injection, escalamiento de privilegios, vulnerabilidades en dependencias, ataques a la infraestructura cloud, etc.</p>
+<p>Estos ataques no son específicos de IA, pero cuando afectan a un sistema de IA sus consecuencias pueden ser más graves: un atacante que compromete el software puede modificar parámetros del modelo, alterar datos, o robar inputs sensibles de los usuarios.</p>
+<p><strong>Controles:</strong> Los mismos controles de seguridad aplicativa convencional aplicados a los activos específicos de IA.</p>
+<hr />
+<h3 id="22-runtime-model-poisoning">2.2. Runtime model poisoning</h3>
+<p>El atacante manipula el comportamiento del modelo alterando sus parámetros directamente en el sistema en producción, sin pasar por el proceso de entrenamiento. También incluye la manipulación de la lógica de input/output del modelo funcionando.</p>
+<p><strong>Controles:</strong>
+- Integridad del modelo en runtime: proteger el almacenamiento de parámetros con controles tradicionales (control de acceso, checksums, cifrado) (<em>runtime model integrity</em>)
+- Integridad de input/output del modelo: proteger la lógica de entrada/salida contra manipulación en tránsito, por ejemplo contra ataques man-in-the-middle (<em>runtime model I/O integrity</em>)</p>
+<hr />
+<h3 id="23-robo-del-modelo-en-runtime">2.3. Robo del modelo en runtime</h3>
+<p>El atacante obtiene los parámetros del modelo directamente desde el sistema en producción, accediendo a ejecutables, memoria u otros medios de almacenamiento o transferencia. El atacante roba los parámetros directamente, sin necesidad de reconstruir el modelo desde cero.</p>
+<p>También incluye <strong>side-channel attacks</strong>: el atacante no roba el modelo completo, sino que infiere información sobre su estructura o parámetros observando características como tiempos de respuesta o consumo energético durante la inferencia.</p>
+<p><strong>Controles:</strong>
+- Confidencialidad del modelo en runtime: controles de seguridad convencionales sobre el almacenamiento de parámetros (control de acceso, cifrado, Trusted Execution Environments) (<em>runtime model confidentiality</em>)
+- Ofuscación del modelo (<em>model obfuscation</em>)</p>
+<hr />
+<h3 id="24-manejo-incorrecto-de-outputs">2.4. Manejo incorrecto de outputs</h3>
+<p>Las salidas de un modelo de IA pueden contener contenido que, si no se maneja correctamente, ejecuta ataques de inyección tradicionales en los sistemas que consumen esos outputs: SQL injection, XSS, command injection, etc.</p>
+<p>El modelo puede generar este contenido porque fue manipulado para hacerlo (prompt injection), porque alucinó código o comandos, o porque reprodujo contenido malicioso de sus datos de entrenamiento.</p>
+<p><strong>Ejemplo:</strong> Un agente de IA genera código SQL como parte de su respuesta. Si ese código se ejecuta directamente sin sanitización, puede contener una inyección SQL.</p>
+<p><strong>Control:</strong> Sanitizar los outputs del modelo antes de usarlos en otros sistemas (<em>encode model output</em>).</p>
+<hr />
+<h3 id="25-filtracion-de-datos-de-input">2.5. Filtración de datos de input</h3>
+<p>Los inputs que los usuarios envían al modelo pueden contener información sensible: preguntas sobre datos confidenciales, documentos internos, secretos de la organización. Si el sistema no protege adecuadamente esos inputs, pueden filtrarse hacia terceros o ser utilizados para entrenar otros modelos sin consentimiento.</p>
+<p><strong>Ejemplo:</strong> Un empleado usa un LLM externo para resumir un contrato confidencial. El texto del contrato es enviado al proveedor externo como input y puede ser utilizado para entrenar su modelo.</p>
+<p><strong>Control:</strong> Confidencialidad del input del modelo (<em>model input confidentiality</em>) — cifrar y controlar el acceso a los inputs en tránsito y en reposo.</p>
+<hr />
+<h3 id="26-filtracion-y-manipulacion-de-datos-de-contexto">2.6. Filtración y manipulación de datos de contexto</h3>
+<p>Los datos de contexto son activos sensibles: pueden contener secretos corporativos, datos de clientes, o documentos confidenciales.</p>
+<p>Existen dos amenazas:</p>
+<p><strong>Filtración:</strong> El repositorio es accedido de forma no autorizada, exponiendo su contenido directamente.</p>
+<p><strong>Manipulación:</strong> Un atacante modifica el contenido del repositorio. Cuando el modelo procesa esos datos, actúa según las instrucciones maliciosas insertadas.</p>
+<p><strong>Controles:</strong>
+- Confidencialidad de los datos de contexto (<em>augmentation data confidentiality</em>)
+- Integridad de los datos de contexto (<em>augmentation data integrity</em>)</p>
+<hr />
+<h2 id="3-controles-generales">3. Controles generales</h2>
+<p>Los controles generales aplican a todas las amenazas — de uso, de desarrollo y de runtime. Se organizan en tres grupos.</p>
+<hr />
+<h3 id="31-gobierno-governance">3.1. Gobierno (Governance)</h3>
+<p>El gobierno de la seguridad en IA implica establecer responsabilidades claras, mantener visibilidad sobre qué sistemas de IA existen y cómo operan, y asegurar el cumplimiento normativo.</p>
+<p><strong>Controles clave:</strong>
+- <strong>AI program (<em>#AI PROGRAM</em>):</strong> incluye inventario de iniciativas de IA, análisis de impacto, asignación de responsabilidades y gestión de riesgos.
+- <strong>Security program (<em>#SEC PROGRAM</em>):</strong> incluye el ciclo de vida completo de la IA y sus activos específicos: datos de entrenamiento, parámetros, augmentation data, inputs, outputs.
+- <strong>Secure development program (<em>#SEC DEV PROGRAM</em>):</strong> tener procesos de desarrollo seguro que incorporen las particularidades de IA — data engineering, model engineering, data scientists — como parte integral del programa de desarrollo existente.
+- <strong>Development program (<em>#DEV PROGRAM</em>):</strong> ciclo de vida de desarrollo que incluya las actividades específicas de IA.
+- <strong>Compliance checking (<em>#CHECK COMPLIANCE</em>):</strong> verificar el cumplimiento de regulaciones y estándares aplicables (EU AI Act, ISO 42001, ISO 27001, entre otros).
+- <strong>Education (<em>#SEC EDUCATE</em>):</strong> capacitar a ingenieros, data scientists y equipos de seguridad en las amenazas y controles específicos de IA.</p>
+<hr />
+<h3 id="32-limitacion-de-datos-sensibles">3.2. Limitación de datos sensibles</h3>
+<p>Los ataques a la confidencialidad e integridad se pueden reducir minimizando la superficie de datos: usar la menor cantidad y variedad de datos posible, y conservarlos el menor tiempo necesario.</p>
+<p><strong>Minimización de datos (<em>#DATA MINIMIZE</em>):</strong> remover campos no necesarios de los datasets para prevenir filtraciones o manipulaciones. Limpiar datos de propósitos experimentales.</p>
+<p><strong>Datos permitidos (<em>#ALLOWED DATA</em>):</strong> definir y controlar qué tipos de datos pueden usarse para entrenar o enriquecer el modelo.</p>
+<p><strong>Retención corta (<em>#SHORT RETAIN</em>):</strong> eliminar o anonimizar datos una vez que ya no sean necesarios, o cuando la ley lo requiera. Minimiza el impacto si los datos son comprometidos.</p>
+<p><strong>Ofuscación de datos de entrenamiento (<em>#OBFUSCATE TRAINING DATA</em>):</strong> proteger los datos de entrenamiento de manera que no sea posible re-identificar individuos a partir de ellos. </p>
+<p>Técnicas:
+- <strong>Enmascaramiento:</strong> reemplazar datos sensibles por alternativas que retienen la información necesaria (tokenización, perturbación, generalización)
+- <strong>Cifrado</strong>
+- <strong>Anonimización:</strong> reemplazar datos sensibles por etiquetas genéricas o pseudónimos
+- <strong>Privacidad diferencial:</strong> framework estadístico que garantiza que el modelo aprenda del conjunto como un todo y no de datos individuales, agregando ruido aleatorio para que no sea posible inferir individuos a partir del output</p>
+<p><strong>Discreción (<em>#DISCRETE</em>):</strong> reducir la información técnica disponible para los atacantes. Minimizar los detalles técnicos expuestos en outputs del modelo y en documentación pública. Requiere equilibrar con la necesidad de transparencia.</p>
+<hr />
+<h3 id="33-limitacion-de-comportamiento-no-deseado">3.3. Limitación de comportamiento no deseado</h3>
+<p>Un comportamiento no deseado en un modelo no siempre es resultado de un ataque: puede surgir de datos de entrenamiento insuficientes o incorrectos, un modelo desactualizado, errores en la ingeniería de datos. Los controles para estos casos apuntan a detectar y limitar ese comportamiento independientemente de su causa.</p>
+<p><strong>Vigilancia (<em>#OVERSIGHT</em>):</strong> supervisión por parte de un humano o de lógica de negocio (guardrails) para detectar, corregir o detener decisiones del modelo antes de que tengan efecto.</p>
+<p>Ejemplos:
+- Lógica que impide que el baúl de un auto se abra mientras está en movimiento, incluso si el conductor parece solicitarlo
+- Solicitar confirmación del usuario antes de que un agente envíe correos masivos
+- Censura de outputs violentos o no éticos</p>
+<p>Limitaciones: las reglas muchas veces no se adaptan 100% a lo que se necesita. La supervisión humana es más costosa pero permite validación con más criterio.</p>
+<p><strong>Mínimos privilegios (<em>#LEAST MODEL PRIVILEGE</em>):</strong>
+- Reducir las acciones del modelo a las estrictamente necesarias
+- Ejecutar acciones con los privilegios apropiados (el modelo hereda los privilegios del usuario que lo invoca, no los del sistema)
+- Evitar implementar autorización basada en instrucciones de IA o prompts, que son susceptibles a alucinaciones y manipulaciones</p>
+<p><strong>Transparencia (<em>#AI TRANSPARENCY</em>):</strong> poder explicar de manera clara al usuario final el funcionamiento del modelo, su proceso de entrenamiento y la exactitud de sus resultados. Implica documentar abiertamente el ciclo de vida del modelo, detallando las fuentes de datos utilizadas, la arquitectura de los algoritmos, el entrenamiento previo, las limitaciones conocidas y los posibles sesgos. Busca responder al qué y cómo se construyó el sistema.</p>
+<p><strong>Validación continua (<em>#CONTINUOUS VALIDATION</em>):</strong> testear el comportamiento del modelo contra un set de datos de test para detectar cambios, ataques permanentes (como envenenamientos), problemas de robustez (como ataques de evasión), fallas del sistema o degradación de performance.</p>
+<p><strong>Explicabilidad (<em>#EXPLAINABILITY</em>):</strong> compartir información sobre cómo el modelo llegó a un resultado específico. Permite a los usuarios validar la exactitud, detectar comportamientos anómalos y entender qué cambiar para obtener un output diferente. Complementa con la transparencia.</p>
+<p><strong>Model alignment (<em>#MODEL ALIGNMENT</em>):</strong> asegurar que el modelo se comporta de acuerdo con los valores e intenciones de sus creadores, incluso frente a inputs inesperados o adversariales.</p>
+<p><strong>Testing de sesgo no deseado (<em>#UNWANTED BIAS TESTING</em>):</strong> detectar sistemáticamente si el modelo trata de manera desigual a distintos grupos. Los sesgos detectados pueden también revelar ataques de data poisoning: si alguien inyectó datos maliciosos para sesgar el modelo hacia ciertos grupos, el testing de sesgo puede descubrirlo.</p>
+<hr />
+<h2 id="resumen-mapa-de-amenazas-completo">Resumen: mapa de amenazas completo</h2>
+<div align="center">
+  <img src="/crypto-cyber/docs/modulo-3-seguridad-ia/images/threatMatrix.png" alt="Matriz de amenazas IA" width="400">
+</div>
+
+<hr />
+<h2 id="referencias">Referencias</h2>
+<ul>
+<li>OWASP AI Exchange</li>
+</ul>
 
 
 
