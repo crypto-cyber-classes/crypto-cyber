@@ -1,0 +1,22 @@
+# Configuración de ModelHub.
+
+servicio:
+  nombre: ModelHub
+  entorno: produccion
+
+# Transporte hacia los dispositivos (LoRa / MTU chico).
+transporte:
+  max_frame_bytes: 1500
+
+# Default de cifrado de telemetría en reposo (ver telemetry.py).
+telemetria:
+  cifrado_default: aes-256-gcm
+
+# El certificado TLS de la API lo emite una CA EXTERNA (ver ca.py).
+api_tls:
+  ca: externa
+  algoritmo_cert: ecdsa-p256
+
+# Sesiones de dispositivos (ver server.py).
+sesiones:
+  ttl_segundos: 3600
