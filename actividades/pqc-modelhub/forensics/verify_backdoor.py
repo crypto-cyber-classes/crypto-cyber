@@ -1,17 +1,11 @@
-"""Cierra el ataque: con la clave privada recuperada, firma un modelo con backdoor y
-se lo pasa a un dispositivo. El dispositivo lo carga como si fuera legítimo.
-
-Este script NO recupera la clave: esa parte la escriben ustedes (son ~6 líneas de
-aritmética modular a partir de forensics/signatures.json). Este script toma la clave
-que ya recuperaste y demuestra la consecuencia.
+"""Toma una clave privada recuperada, firma un modelo con backdoor y se lo pasa a un
+dispositivo, que lo carga como si fuera legítimo. Recibe la clave que ya recuperaste
+(no la recupera este script) y muestra la consecuencia.
 
 Uso:
     python forensics/verify_backdoor.py --key clave.txt
-    echo 0x<d_en_hex> | python forensics/verify_backdoor.py
     python forensics/verify_backdoor.py --key <d_en_hex>
-
-`clave.txt` (o el argumento) debe contener el escalar privado d en hex (0x...) o en
-decimal.
+    echo 0x<d_en_hex> | python forensics/verify_backdoor.py
 """
 
 import argparse

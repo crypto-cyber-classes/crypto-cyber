@@ -1,12 +1,7 @@
-"""Genera dos firmas ECDSA P-256 de dos releases de ModelHub REUSANDO el mismo nonce.
+"""Genera las dos firmas de los releases v2.1 y v2.2 que están en signatures.json.
 
-Esto reproduce un error de implementación clásico: firmar dos mensajes distintos con
-el mismo valor de `k` (nonce). Cuando eso pasa, las dos firmas comparten el mismo `r`,
-y de ahí se puede recuperar la clave privada con aritmética modular.
-
-El script es reproducible y ya dejó su salida en `signatures.json`. NO hace falta
-correrlo para la actividad; está para que se vea que las firmas son reales y salen de
-la misma clave con la que el servidor firma releases.
+Reproducible: regenera signatures.json idéntico. No hace falta correrlo para la
+actividad; las firmas ya vienen generadas.
 
 Uso:  python forensics/generate_signatures.py
 """
@@ -28,8 +23,7 @@ GX = 0x6B17D1F2E12C4247F8BCE6E563A440F277037D812DEB33A0F4A13945D898C296
 GY = 0x4FE342E2FE1A7F9B8EE7EB4A7C0F9E162BCE33576B315ECECBB6406837BF51F5
 N = 0xFFFFFFFF00000000FFFFFFFFFFFFFFFFBCE6FAADA7179E84F3B9CAC2FC632551
 
-# Nonce FIJO que se reusa en las dos firmas. Este es el bug.
-REUSED_K = 0x7A1F9C3E5D2B8A46C0E1F3D5B7A9C8E60F2D4B6A8C0E2F4D6B8A0C2E4F6A8B0D
+NONCE_K = 0x7A1F9C3E5D2B8A46C0E1F3D5B7A9C8E60F2D4B6A8C0E2F4D6B8A0C2E4F6A8B0D
 
 
 def _inv(x, m):
@@ -91,7 +85,7 @@ def main():
     firmas = []
     for rel in releases:
         msg = release_message(rel["version"], rel["model"])
-        r, s = ecdsa_sign_fixed_k(d, msg, REUSED_K)
+        r, s = ecdsa_sign_fixed_k(d, msg, NONCE_K)
         firmas.append(
             {
                 "version": rel["version"],
